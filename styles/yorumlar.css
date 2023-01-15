@@ -1,0 +1,96 @@
+.yorumlar
+{
+   padding-top:50px;
+   padding-bottom: 50px;
+}
+.yorumlar h1
+{
+   padding-top: 100px;
+   text-align: center;
+   user-select: none;
+}
+.yorumlar-col
+{
+   margin: auto;
+   padding-top: 60px;
+   width: 98%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 25px;
+   justify-content: space-around;
+}
+.yorumlar-detail
+{
+   width: 400px;
+   height: 300px;
+   background-color: rgba(0, 0, 0, 0.4);
+   padding: 20px;
+   border-radius: 18px;
+}
+.yorumlar-detail .yorum-images
+{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   position: relative;
+   user-select: none;
+}
+.yorumlar-detail .yorum-images a img
+{
+   width: 90px;
+   height: 90px;
+   border-radius: 100px;
+   overflow: hidden;
+}
+.yorumlar-detail .yorum-images .media img
+{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 35px;
+   height: 35px;
+   border-radius: 100px;
+}
+.yorum-txt
+{
+   padding-top: 20px;
+   position: relative;
+}
+.yorum-rate
+{
+   margin: auto;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 60%;
+}
+.rate0
+{
+   width: 25px;
+   height: 25px;
+   border-radius: 100px;
+   background-color: transparent;
+   border: 2px solid green;
+}
+.rate1
+{
+   width: 25px;
+   height: 25px;
+   border-radius: 100px;
+   background-color: rgba(0, 128, 0, 0.8);
+   border: 2px solid green;
+}
+.rate-txt
+{
+   font-size: 30px;
+   padding-right: 15px;
+}
+.yorum-tarih
+{
+   position: absolute;
+   right: 0;
+   top: 0;
+   font-size: 12px;
+   opacity: 0.65;
+   text-align: end;
+}

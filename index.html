@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="tr" data-bs-theme="dark">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <!-- Styles -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+   <link rel="stylesheet" href="styles/template.css">
+   <link rel="stylesheet" href="styles/home.css">
+
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
+
+   <title>Cool Travel İstanbul</title>
+   <link rel="shortcut icon" href="img/CTİ Yeni Logo icon.ico">
+</head>
+
+<body>
+   <header>
+      <nav>
+         <a href="index.html" class="logo">
+            <img src="img/CTİ Logo Yeni.png">
+            <h1>Cool Travel İstanbul</h1>
+         </a>
+         <div class="nav-links" id="navLinks">
+            <ul>
+               <div class="hider">
+                  <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+               </div>
+               <li class="active-navlink">
+                  <a href="index.html">
+                     <i class="fa-solid fa-house"></i> Anasayfa</a>
+               </li>
+               <li class="navlink">
+                  <a href="#CTH">
+                     <i class="fa-solid fa-notes-medical"></i> CTH
+                  </a>
+               </li>
+               <li class="navlink">
+                  <a href="yorumlar.html">
+                     <i class="fa-solid fa-comment"></i> Yorumlar
+                  </a>
+               </li>
+               <li class="nav-item dropdown-center navlink">
+                  <a class="dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                     <i class="fa-solid fa-dollar-sign"></i> Ürünler
+                  </a>
+                  <ul class="dropdown-menu">
+                     <li class="dropdown-item navlink">
+                        <a href="transfer.html"><i class="fa-solid fa-car-side"></i> Transfer</a>
+                     </li>
+                     <li class="dropdown-item navlink">
+                        <a href="turlar.html"><i class="fa-solid fa-car-side"></i> Turlar</a>
+                     </li>
+                     <li class="dropdown-item navlink">
+                        <a href="deniz-turu.html"><i class="fa-solid fa-sailboat"></i> Deniz Turu</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="nav-item dropdown-center navlink">
+                  <a class="dropdown-toggle" role="" data-bs-toggle="dropdown">
+                     <i class="fa-solid fa-user"></i> İletişim
+                  </a>
+                  <ul class="dropdown-menu">
+                     <li class="dropdown-item navlink">
+                        <a href="https://www.instagram.com/direct/t/340282366841710300949128284164620405837" target="_blank"><i
+                              class="fa-brands fa-instagram"></i> İnstagram</a>
+                     </li>
+                     <li class="dropdown-item navlink">
+                        <a href="https://api.whatsapp.com/send?phone=+905301267153&text=WhatsApp" target="_blank">
+                           <i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+                     </li>
+                     <li class="dropdown-item navlink">
+                        <a href="iletisim.html">
+                           <i class="fa-solid fa-envelope"></i> E-Posta</a>
+                     </li>
+                     <li class="dropdown-item navlink">
+                        <a href="tel:+905301267153">
+                           <i class="fa-solid fa-phone"></i> (530) 126 7153</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="navlink">
+                  <a href="hakkımızda.html"><i class="fa-solid fa-circle-question"></i> Hakkımızda</a>
+               </li>
+            </ul>
+         </div>
+         <script src="template.js"></script>
+         <i class="fa fa-bars" id="MenuBtn" aria-hidden="true" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="textbox">
+         <button type="button" onclick="window.location.href='#urunlerimiz'" class="btn btn-info text-light">Ürünlerimiz</button>
+      </div>
+   </header>
+   <section class="fiyatlar" id="urunlerimiz">
+      <div class="baslik">
+         <h1>Ürünlerimiz</h1>
+      </div>
+      <div class="fiyatlar-col">
+         <div class="fiyatlar-detail">
+            <a href="transfer.html">
+               <img src="img/kapadokya.jpg" alt="">
+            <div class="fiyatlar-txt">
+               <h4>Transferler</h4>
+               <p class="fiyat d-grid gap-1">
+               <button type="button" class="btn btn-outline-success">Detaylar</button>
+               </p>
+            </div>
+            </a>
+         </div>
+         <div class="fiyatlar-detail">
+            <a href="turlar.html">
+               <img src="img/ayasofya.jpg" alt="">
+            <div class="fiyatlar-txt">
+               <h4>Turlar</h4>
+               <p class="fiyat d-grid gap-1">
+               <button type="button" class="btn btn-outline-success">Detaylar</button>
+            </p>
+            </div>
+            </a>
+         </div>
+         <div class="fiyatlar-detail">
+            <a href="deniz-turu.html">
+               <img src="img/istanbul-yat.jpg" alt="">
+            <div class="fiyatlar-txt">
+               <h4>Deniz Turları</h4>
+            <p class="fiyat d-grid gap-1">
+               <button type="button" class="btn btn-outline-success">Detaylar</button>
+            </p>
+            </a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="saglik-tanitim">
+      <section class="saglik"  id="CTH">
+         <div class="saglik-baslik">
+            <h1>Cool Travel Health +</h1>
+         </div>
+         <div class="saglik-col">
+            <div class="saglik-menu">
+               <ul>
+                  <li><a class="menu-top" href="img/CTH/Turkey-1.png" target="saglik-icerik">Hastane</a></li>
+                  <li><a href="img/CTH/Turkey-2.png" target="saglik-icerik">Klinik</a></li>
+                  <li><a class="menu-bottom" href="img/CTH/Turkey-3.png" target="saglik-icerik">Transferleri</a></li>
+               </ul>
+            </div>
+            <div class="saglik-icerik">
+               <!-- 1440x680 picture -->
+               <iframe src="img/CTH/Turkey-1.png" width="100%" height="750" name="saglik-icerik" frameborder="1" scrolling="No"></iframe>
+            </div>
+         </div>
+      </section>
+      <section class="tanitim">
+         <div class="tanitim-col">
+            <div class="tanitim-detail">
+               <div class="tanitim-video">
+                  <iframe width="700" height="100%" src="https://www.youtube.com/embed/goL5Oh8O4U0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+               </div>
+               <div class="tanitim-txt">
+                  <h1>Cool Travel İstanbul</h1>
+                  <p>Cool Travel İstanbul Neden Cool Travel İstanbul? Kaliteli güvenilir VIP taşımacılık ve corona virüsü sebebiyle her gün dezenfekte edilen araçları ile hizmet vermektedir. Cool Travel İstanbul ailesi olarak 15 yıldır güvenli, saygın, pozitif hizmet anlayışımız ile yanınızda olmaktan gurur duyuyoruz. 20’yi aşkın aracımız, farklı yabancı dillere sahip prezantabl şoförlerimiz, konforuna önem veren yönetim birimlerimizle önceliğimiz sizinle ve sorunsuz şekilde yolculuğunuzu tamamlamanızdır.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+   </section>
+   <section class="yorumlar">
+      <div class="baslik">
+         <h1>Müşteri Yorumlarımız</h1>
+      </div>
+      <div class="yorumlar-col">
+         <div class="yorumlar-detail">
+            <div class="yorum-images">
+               <a href="https://www.tripadvisor.com.tr/Profile/asliruzgar23" target="_blank"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/eb/a3/default-avatar-2020-38.jpg?w=100&h=-1&s=1"></a>
+               <a class="media" href="https://www.tripadvisor.com.tr/Attraction_Review-g293974-d23281665-Reviews-Cool_Travel_Istanbul-Istanbul.html" target="_blank"><img src="https://static.tacdn.com/favicon.ico?v2"></a>
+               <div class="yorum-rate">
+                  <div class="rate-txt">5.0</div>
+                  <div class="rate1"></div>
+                  <div class="rate1"></div>
+                  <div class="rate1"></div>
+                  <div class="rate1"></div>
+                  <div class="rate1"></div>
+               </div>
+            </div>
+            <div class="yorum-txt">
+               <h4>Aslı Rüzgar Ç</h4>
+               <p>Kind driver, reliable driving and safe travel. l advise👍 Düzgün bir şöför, iyi sürücü tavsiye ederim</p>
+               <p class="yorum-tarih">Yazıldığı tarih: 27 Ekim 2022</p>
+            </div>
+         </div>
+         <div class="yorumlar-detail">
+            <div class="yorum-images">
+               <a href="https://www.tripadvisor.com.tr/Profile/144ranan" target="_blank"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f4/20/default-avatar-2020-31.jpg?w=100&h=-1&s=1"></a>
+               <a class="media" href="https://www.tripadvisor.com.tr/Attraction_Review-g293974-d23281665-Reviews-Cool_Travel_Istanbul-Istanbul.html" target="_blank"><img src="https://static.tacdn.com/favicon.ico?v2"></a>
+               <div class="yorum-rate">
+                  <div class="rate-txt">4.0</div>
+                  <div class="rate1"></div>
+                  <div class="rate1"></div>
+                  <div class="rate1"></div>
+                  <div class="rate1"></div>
+                  <div class="rate0 "></div>
+               </div>
+            </div>
+            <div class="yorum-txt">
+               <h4>RANA N</h4>
+               <p>Cool Travel ile çok güzel bir İstanbul seyahati gerçekleştirdik. Erdinç Bey iyi bir rehber. Araç çok rahat. 👍👍</p>
+               <p class="yorum-tarih">Yazıldığı tarih: 26 Ekim 2022</p>
+            </div>
+         </div>
+         <div class="yorumlar-detail">
+            <div class="yorum-images">
+               <a href="https://www.tripadvisor.com.tr/Profile/hadijaz" target="_blank"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e2/4a/default-avatar-2020-42.jpg?w=100&h=-1&s=1"></a>
+               <a class="media" href="https://www.tripadvisor.com.tr/Attraction_Review-g293974-d23281665-Reviews-Cool_Travel_Istanbul-Istanbul.html" target="_blank"><img src="https://static.tacdn.com/favicon.ico?v2"></a>
+               <div class="yorum-rate">
+                  <div class="rate-txt">3.0</div>
+                  <div class="rate1"></div>
+                  <div class="rate1"></div>
+                  <div class="rate1"></div>
+                  <div class="rate0"></div>
+                  <div class="rate0"></div>
+               </div>
+            </div>
+            <div class="yorum-txt">
+               <h4>Hadija Z</h4>
+               <p>I first booked online for pickup from airport and they are reliable // they will be on time // Ali is a genuine and nice person. Everything went well during my entire trip in Istanbul.</p>
+               <p class="yorum-tarih">Yazıldığı tarih: 27 Aralık 2022</p>
+            </div>
+         </div>
+      </div>
+      <div class="daha-fazla">
+         <button type="button" class="btn btn-outline-success" onclick="window.location.href='yorumlar.html'">Daha Fazla Yorum</button>
+      </div>
+   </section>
+   <section class="referanslar">
+      <div class="referanslar-col">
+         <div class="referanslar-detail">
+            <img src="img/referanslar/thy.png">
+            <img src="img/referanslar/Almanya.png">
+            <img src="img/referanslar/Dubai.png">
+            <img src="img/referanslar/Japonya.png">
+            <img src="img/referanslar/Kuveyt.png">
+            <img src="img/referanslar/Ysvicre.png">
+         </div>
+      </div>
+   </section>
+   <footer>
+      <div class="social-media">
+         <ul>
+            <li><a href="https://www.facebook.com/cooltravelistanbulpage" target="_blank" class="fab fa-facebook"></a></li>
+            <li><a href="https://www.instagram.com/cool_travel_istanbul/" target="_blank" class="fa-brands fa-instagram"></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=+905301267153&text=WhatsApp" target="_blank" class="fa-brands fa-whatsapp"></a></li>
+         </ul>
+      </div>
+   </footer>
+
+
+   <!-- JavaScript -->
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha/js/bootstrap.min.js"
+      integrity="sha384-oesi62h0Lfzrys4LxRF630JCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf"
+      crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/b40b33d160.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
