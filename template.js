@@ -1,6 +1,7 @@
 var navLinks = document.getElementById("navLinks");
 var MenuBtn = document.getElementById("MenuBtn");
 var gotop = document.getElementById('totop');
+var nav = document.querySelector('nav');
 
 function showMenu() {
    navLinks.style.right = "0";
@@ -20,4 +21,5 @@ window.addEventListener('scroll', () =>
    {
       gotop.classList.remove('active');
    }
+   nav.classList.toggle('nav-anim',window.scrollY > 0);
 })
